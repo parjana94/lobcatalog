@@ -22,9 +22,11 @@
     <style>
       #main {
         display: block;
+        animation-duration: 3s;
       }
       #menu {
         display: none;
+        animation-duration: 3s;
       }
     </style>
   </head>
@@ -131,19 +133,37 @@
       </div>
     </div>
     <section class="hide-menu" id="menu">
-      <div class="main-menu">
+      <div class="main-menu first">
         <ul>
-          <li>
-            <a href="/meatgrinder.html">Link text</a>
-          </li>
-          <li><a href="#">test</a></li>
-          <li><a href="#">test</a></li>
-          <li><a href="#">test</a></li>
-          <li><a href="#">test</a></li>
-          <li><a href="#">test</a></li>
-          <li><a href="#">test</a></li>
-          <li><a href="#">test</a></li>
-          <li><a href="#">test</a></li>
+          <li><a class="menu-link" href="#">ჩოფერები</a></li>
+          <li><a class="menu-link" href="#">მტვერსასრუტები</a></li>
+          <li><a class="menu-link" href="#">საცხობი ღუმელები</a></li>
+          <li><a class="menu-link" href="#">ხორცის მანქანები</a></li>
+          <li><a class="menu-link" href="#">ჩოფერები</a></li>
+          <li><a class="menu-link" href="#">მტვერსასრუტები</a></li>
+          <li><a class="menu-link" href="#">საცხობი ღუმელები</a></li>
+          <li><a class="menu-link" href="#">ხორცის მანქანები</a></li>
+          <li><a class="menu-link" href="#">ჩოფერები</a></li>
+          <li><a class="menu-link" href="#">მტვერსასრუტები</a></li>
+          <li><a class="menu-link" href="#">საცხობი ღუმელები</a></li>
+          <li><a class="menu-link" href="#">ხორცის მანქანები</a></li>
+          <button onclick="hideMenu()">Hide Menu</button>
+        </ul>
+      </div>
+      <div class="main-menu sec">
+        <ul>
+          <li><a class="menu-link" href="#">ჩოფერები</a></li>
+          <li><a class="menu-link" href="#">მტვერსასრუტები</a></li>
+          <li><a class="menu-link" href="#">საცხობი ღუმელები</a></li>
+          <li><a class="menu-link" href="#">ხორცის მანქანები</a></li>
+          <li><a class="menu-link" href="#">ჩოფერები</a></li>
+          <li><a class="menu-link" href="#">მტვერსასრუტები</a></li>
+          <li><a class="menu-link" href="#">საცხობი ღუმელები</a></li>
+          <li><a class="menu-link" href="#">ხორცის მანქანები</a></li>
+          <li><a class="menu-link" href="#">ჩოფერები</a></li>
+          <li><a class="menu-link" href="#">მტვერსასრუტები</a></li>
+          <li><a class="menu-link" href="#">საცხობი ღუმელები</a></li>
+          <li><a class="menu-link" href="#">ხორცის მანქანები</a></li>
           <button onclick="hideMenu()">Hide Menu</button>
         </ul>
       </div>
@@ -152,7 +172,7 @@
     <script>
       function showMenu() {
         document.getElementById('main').style.display = 'none'
-        document.getElementById('menu').style.display = 'block'
+        document.getElementById('menu').style.display = 'flex'
       }
 
       function hideMenu() {
