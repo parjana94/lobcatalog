@@ -4,8 +4,10 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: block;
 }
 
 .main {
@@ -100,4 +102,44 @@ body {
 .tel {
   text-decoration: none;
   color: green;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #435b66;
+  color: black;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ysabeau SC', sans-serif;
+}
+.top {
+  text-decoration: none;
+  color: #de4d52;
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.foot-call {
+  text-decoration: none;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.hide-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: none;
+}
+.main-manu {
+  background-color: #f1f6f9;
+  width: 350px;
+  height: 100vh;
 }
