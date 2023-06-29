@@ -54,6 +54,10 @@ body {
   color: #de4d52;
   font-family: 'Ysabeau SC', sans-serif;
   font-weight: 700;
+  transition: 0.5s;
+}
+.link:hover {
+  color: green;
 }
 
 .line {
