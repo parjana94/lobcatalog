@@ -22,16 +22,18 @@
     <style>
       #main {
         display: block;
-        animation-duration: 3s;
+          transition: 0.5s;
+
       }
       #menu {
         display: none;
-        animation-duration: 3s;
+          transition: 0.5s;
+
       }
     </style>
   </head>
   <body>
-    <div class="container" id="main">
+    <div class="container">
       <section class="main">
         <section class="header">
           <div class="logo">
@@ -40,15 +42,15 @@
           </div>
           <div class="menu">
             <ul>
-              <button class="link" onclick="showMenu()">Menu</button>
-              <li><a class="link" href="#">Manu</a></li>
+              <li><a class="link" href="index.html">Main</a></li>
+              <li><a class="link pointer" onclick="showMenu()">Manu</a></li>
               <li><a class="link" href="#">Contact</a></li>
             </ul>
           </div>
         </section>
         <div class="line"></div>
-        <section id="meatgrinder">
-          <section class="cards">
+          <section class="cards" id="main">
+            <!-- პროდუქტები -->
             <div class="card">
               <div class="img">
                 <img src="products/meatgrinder/pic.webp" alt="" />
@@ -122,8 +124,19 @@
               </div>
             </div>
           </section>
+            <!-- პროდუქტები -->
+
+              <section class="hide-menu" id="menu">
+      <div class="main-menu">
+         <button class="close" onclick="hideMenu()">X</button>
+        <ul>
+         
+          <li><a class="menu-link" href="/meatgrinder.html">ხორცსაკეპი</a></li>
+          
+        </ul>
+      </div>
         </section>
-      </section>
+
       <div class="footer">
         <div class="foot-cont">
           <a class="top" href="#">Top &#8593; </a>
@@ -132,42 +145,6 @@
         </div>
       </div>
     </div>
-    <section class="hide-menu" id="menu">
-      <div class="main-menu first">
-        <ul>
-          <li><a class="menu-link" href="#">ჩოფერები</a></li>
-          <li><a class="menu-link" href="#">მტვერსასრუტები</a></li>
-          <li><a class="menu-link" href="#">საცხობი ღუმელები</a></li>
-          <li><a class="menu-link" href="#">ხორცის მანქანები</a></li>
-          <li><a class="menu-link" href="#">ჩოფერები</a></li>
-          <li><a class="menu-link" href="#">მტვერსასრუტები</a></li>
-          <li><a class="menu-link" href="#">საცხობი ღუმელები</a></li>
-          <li><a class="menu-link" href="#">ხორცის მანქანები</a></li>
-          <li><a class="menu-link" href="#">ჩოფერები</a></li>
-          <li><a class="menu-link" href="#">მტვერსასრუტები</a></li>
-          <li><a class="menu-link" href="#">საცხობი ღუმელები</a></li>
-          <li><a class="menu-link" href="#">ხორცის მანქანები</a></li>
-          <button onclick="hideMenu()">Hide Menu</button>
-        </ul>
-      </div>
-      <div class="main-menu sec">
-        <ul>
-          <li><a class="menu-link" href="#">ჩოფერები</a></li>
-          <li><a class="menu-link" href="#">მტვერსასრუტები</a></li>
-          <li><a class="menu-link" href="#">საცხობი ღუმელები</a></li>
-          <li><a class="menu-link" href="#">ხორცის მანქანები</a></li>
-          <li><a class="menu-link" href="#">ჩოფერები</a></li>
-          <li><a class="menu-link" href="#">მტვერსასრუტები</a></li>
-          <li><a class="menu-link" href="#">საცხობი ღუმელები</a></li>
-          <li><a class="menu-link" href="#">ხორცის მანქანები</a></li>
-          <li><a class="menu-link" href="#">ჩოფერები</a></li>
-          <li><a class="menu-link" href="#">მტვერსასრუტები</a></li>
-          <li><a class="menu-link" href="#">საცხობი ღუმელები</a></li>
-          <li><a class="menu-link" href="#">ხორცის მანქანები</a></li>
-          <button onclick="hideMenu()">Hide Menu</button>
-        </ul>
-      </div>
-    </section>
 
     <script>
       function showMenu() {

@@ -10,13 +10,14 @@ body {
   justify-content: center;
   align-items: center;
   display: block;
+  transition: 0.5s;
 }
 
 .main {
   background-color: #f1f6f9;
   width: 350px;
   height: 100vh;
-  animation-duration: 3s;
+  transition: 0.5s;
 }
 .header {
   width: 90%;
@@ -66,6 +67,7 @@ body {
 .cards {
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 .card {
   display: flex;
@@ -119,6 +121,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Ysabeau SC', sans-serif;
+  height: 20px;
 }
 .top {
   text-decoration: none;
@@ -138,20 +141,53 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
   display: none;
   animation-duration: 3s;
-  width: 360px;
+  width: 90%;
+  margin: 0 auto;
 }
 .main-menu {
   background-color: #f1f6f9;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.pointer {
+  cursor: pointer;
+}
+.main-menu ul {
+  margin-top: 50px;
 }
 .main-menu ul li {
   padding-bottom: 20px;
 }
 .menu-link {
   text-decoration: none;
-  padding: 5px 15px;
   border-radius: 10px;
-  color: black;
+  border: 1px solid #de4d52;
+  padding: 5px 10px;
+  color: #001c30;
+  transition: 0.5s;
+}
+.menu-link:hover {
+  color: white;
+  background-color: #001c30;
+}
+.close {
+  position: absolute;
+  right: 0;
+  background-color: #de4d52;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  transition: 0.5s;
+}
+
+.close:hover {
+  color: #de4d52;
+  border: 1px solid #de4d52;
+  background-color: white;
 }
