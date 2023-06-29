@@ -49,9 +49,13 @@
           </div>
         </section>
         <div class="line"></div>
+        <!-- პროდუქტები -->
           <section class="cards" id="main">
-            <!-- პროდუქტები -->
-            <div class="card">
+            
+            <!--ხორცსაკეპი-->
+            <section id="meatgrinder">
+              <h2 class="name-h2">ხორცსაკეპი</h2>
+              <div class="card">
               <div class="img">
                 <img src="products/meatgrinder/pic.webp" alt="" />
               </div>
@@ -124,6 +128,45 @@
               </div>
             </div>
           </section>
+          <!--მტვერსასრუტი-->
+            <section id="mtversasruti" >
+              <h2 class="name-h2">მტვერსასრუტი</h2>
+              <div class="card">
+              <div class="img">
+                <img src="https://www.citrus.ge/images/products/CS974206/mtversasruti-franko-fes-1151-1683890360300.png" alt="" />
+              </div>
+              <div class="agwera">
+                <h2 class="name">მტვერსასრუტი FRANKO FES-1151</h2>
+                <h3 class="number">
+                  დაგვირეკეთ ნომერზე:
+                  <a class="tel" href="tel:+995 555770599">555770599</a>
+                </h3>
+                <h3>გამოყენების ტიპი: ვერტიკალური;</h3>
+                <h3>სიმძლავრე: 500 w</h3>
+                <h3>შეწოვის სიმძლავრე: 300</h3>
+                <h3>სადენის სიგრძე: 5 მ</h3>
+                <h3>გარანტია: 2 წელი</h3>
+              </div>
+            </div>
+                   <div class="card">
+              <div class="img">
+                <img src="https://sm.ge/files/products/n1bocsstU20ziMiw6b7mbrfs5aaBa2.png" alt="" />
+              </div>
+              <div class="agwera">
+                <h2 class="name">მტვერსასრუტი FRANKO FVC-1036</h2>
+                <h3 class="number">
+                  დაგვირეკეთ ნომერზე:
+                  <a class="tel" href="tel:+995 555770599">555770599</a>
+                </h3>
+                <h3>ტიპი: ტომრით</h3>
+                <h3>სიმძლავრე: 500 w</h3>
+                <h3>მაქსიმალური სიმძლავრე: 2400 W</h3>
+                <h3>შესრუტვის სიმძლავრე: 380 W</h3>
+              </div>
+            </div>
+            </section>
+            <!--მტვერსასრუტი-->
+            </section>
             <!-- პროდუქტები -->
 
               <section class="hide-menu" id="menu">
@@ -131,7 +174,9 @@
          <button class="close" onclick="hideMenu()">X</button>
         <ul>
          
-          <li><a class="menu-link" href="/meatgrinder.html">ხორცსაკეპი</a></li>
+          <li><a class="menu-link" onclick="hideMenu()" href="#meatgrinder">ხორცსაკეპი</a></li>
+          <li><a class="menu-link" onclick="hideMenu()" href="#mtversasruti">მტვერსასრუტი</a></li>
+
           
         </ul>
       </div>
@@ -141,7 +186,7 @@
         <div class="foot-cont">
           <a class="top" href="#">Top &#8593; </a>
           <a class="foot-call" href="tel:+995 555770599">Call us</a>
-          <a class="link" href="#">Manu</a>
+          <a class="link pointer" onclick="showMenu()">Manu</a>
         </div>
       </div>
     </div>

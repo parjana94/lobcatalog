@@ -191,3 +191,14 @@ body {
   border: 1px solid #de4d52;
   background-color: white;
 }
+
+.name-h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  border: 1px solid #de4d52;
+  padding: 5px 0;
+  width: 90%;
+  margin: 20px auto;
+  letter-spacing: 10px;
+  color: green;
+}
