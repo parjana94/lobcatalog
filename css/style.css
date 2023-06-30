@@ -156,7 +156,7 @@ body {
   margin: 0 auto;
   position: relative;
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 .pointer {
   cursor: pointer;
