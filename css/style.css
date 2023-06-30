@@ -206,3 +206,7 @@ body {
   letter-spacing: 10px;
   color: green;
 }
+
+.video {
+  border-radius: 10px;
+}
